@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Focus+clear.png" type="image/x-icon">
+    <head>
+        <style>
+            body{
+	            background-image: url("aa5.jpg");
+	            background-repeat: no-repeat;
+	            background-attachment: fixed;
+	            background-size: cover;
+	            background-position: center;
+	            z-index: -1;
+            }
+            body::after{
+	            content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.7); /* Light overlay with 50% opacity */
+                z-index: -1; /* Overlay above the background */
+                }
+            .logo{
+                width: 20%;
+                height: 20%;
+                display: grid;
+                margin: 0 auto;
+                padding-top: 50px;
+                filter: drop-shadow(0 3px 6px rgba(0, 40, 72, 0.8)); /* Drop shadow for depth */
+                transition: transform 0.3s; /* Smooth transition for hover effect */
+            }
+            .tagLine{
+                color: #002848;
+                text-align: center;
+                font-family: arial;
+                font-size: 200%;
+            }
+            .getStarted{
+                justify-content: center;
+                width: 35%;
+                padding: 15px 10px;
+	            border-radius: 20px;
+	            display: flex;
+	            margin: 0% auto;
+                margin-top: 5%;
+                border: white 3px solid;
+                font-family: "Arial";
+                font-size: 150%;
+                font-weight: bolder;
+                color: white;
+                background-color: #002848;
+                cursor: pointer;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+                transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and scaling */
+            }
+            .getStarted:hover{
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Darker and larger shadow on hover */
+                transform: translateY(-2px); /* Slightly lift the button on hover */
+                text-decoration: underline;
+            }
+        </style>
+        <title>HOME | FOCUS+</title>
+    </head>
+    <body>
+        <img src="Focus+clear.png" alt="FOCUS+ Logo" class = "logo">
+        <h1 class="tagLine">ELEVATING FROM SIMPLE.</h1>
+        <button class="getStarted" onclick="proceedToHomePage()">GET STARTED</button>
+        <script>
+            function proceedToHomePage() {window.location.href = 'home.html';}
+        </script>
+    </body>
+</html>
