@@ -5,7 +5,7 @@
     <link rel="icon" href="Focus+clear.png" type="image/x-icon">
     <head>
         <style>
-            body{
+            /*body{
 	            background-image: url("aa5.jpg");
 	            background-repeat: no-repeat;
 	            background-attachment: fixed;
@@ -21,10 +21,10 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 200%;
+                height: 120%;
                 background-color: rgba(255, 255, 255, 0.6); /* Light overlay with 50% opacity */
-                z-index: -1; /* Overlay above the background */
-                }
+                /*z-index: -1; /* Overlay above the background */
+                /*}*/
             .contact{
                 font-weight: bolder;  
                 border-bottom: 3px solid #002848;
@@ -155,10 +155,17 @@
             }
             .contactLoc{
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
                 flex-direction: row;
                 gap: 15px;
                 padding: 10px 20px;
+                margin: 0 30%
+            }
+            .icons{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                padding: 15px;
             }
             #logoTeam{
                 width: 150px;
@@ -223,11 +230,15 @@
                     <img src="FM-clear.png" alt="Team Logo" id="logoTeam">
                     <h6 class="address">FOCUS+ by MountIO<br>New Visayas, Panabo City, <br>
                     Davao del Norte, Philippines 8105</h6>
-                    <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="fb logo" id="fb" title="FOCUS+arget">
-                    <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="ig logo" id="ig" title="FOCUS+arget">
-                    <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" alt="call" id="call" title="0966-352-5363">
-                    <img src="https://img.icons8.com/?size=100&id=YRRhCXfA0Vd0&format=png&color=000000" alt="mail" id="mail" title="mount.io.focus@gmail.com">
+                    <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="fb logo" id="fb" title="FOCUS+arget">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="ig logo" id="ig" title="FOCUS+arget">
+                        <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" alt="call" id="call" title="0966-352-5363">
+                        <img src="https://img.icons8.com/?size=100&id=YRRhCXfA0Vd0&format=png&color=000000" alt="mail" id="mail" title="mount.io.focus@gmail.com">
+                    
+                    </div>
                 </div>
+                <div class="copyright"><label><center>MountIO &copy 2024. All rights reserved.</center></label></div>
                 <!--<div class="contactDet">
                     <div class="icons">
                     <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="fb logo" id="fb">
